@@ -18,8 +18,10 @@ export default class App extends Component {
 
         var config = {
             method: 'get',
-            url: 'localhost:3000',
-            headers: { }
+            url: 'localhost:3000/user',
+            headers: { 
+                'Authorization': 'Basic PEJhc2ljIEF1dGggVXNlcm5hbWU+OjxCYXNpYyBBdXRoIFBhc3N3b3JkPg=='
+            }
         };
 
         axios(config)

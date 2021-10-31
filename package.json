@@ -92,4 +92,5 @@
     "img-loader": "^4.0.0",
     "uglifyjs-webpack-plugin": "^1.2.7"
   }
+
 }
