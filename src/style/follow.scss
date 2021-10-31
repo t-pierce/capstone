@@ -1,0 +1,38 @@
+.social-media-wrapper {
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 50px;
+
+
+    .text-wrapper {
+        font-size: 20px;
+        margin-left: 275px;
+    }
+
+    .social-icons {
+        margin-top: 50px;
+        margin-left: 400px;
+        transition: transform 250ms;
+
+        &:hover {
+            transform: translateY(-2px);
+        }
+          
+        a.facebook {
+            color: #4968ad;
+        }
+          
+        a.twitter {
+            color: #49a1eb;
+        }
+          
+        a.instagram {
+            color: black;
+        }
+    }
+
+
+
+}

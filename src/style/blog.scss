@@ -1,0 +1,22 @@
+.body-wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+
+    .text-wrapper {
+        max-width: 90%;
+        height: auto;
+        padding-left: 5px;
+        float: left;
+        color: black;
+    }
+
+    .text-wrapper h2 {
+        font-size: 1rem;
+    }
+
+    .img-wrapper {
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+}
