@@ -28,9 +28,9 @@
   "author": "Your Name Here",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/bottega-code-school/js-builder/issues"
+    "url": "https://github.com/t-pierce/capstone.git"
   },
-  "homepage": "https://github.com/bottega-code-school/js-builder",
+  "homepage": "https://github.com/t-pierce/capstone.git",
   "dependencies": {
     "@brainhubeu/react-carousel": "^2.0.4",
     "@fortawesome/fontawesome-svg-core": "^1.2.36",
