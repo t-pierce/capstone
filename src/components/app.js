@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
 import axios from 'axios';
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
-import { useMediaQuery } from 'react-responsive';
 
 import NavigationContainer from './navigation-container';
 import Home from './pages.js/home';
