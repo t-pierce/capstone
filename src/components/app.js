@@ -14,20 +14,20 @@ export default class App extends Component {
         super();
 
 
-        const axios = require('axios');
+        var axios = require('axios');
 
-        const config = {
-        method: 'get',
-        url: 'localhost:3000',
-        headers: { }
+        var config = {
+            method: 'get',
+            url: 'localhost:3000',
+            headers: { }
         };
 
         axios(config)
         .then(function (response) {
-        console.log(JSON.stringify(response.data));
+            console.log(JSON.stringify(response.data));
         })
         .catch(function (error) {
-        console.log(error);
+            console.log(error);
         });
 
     }
