@@ -1,36 +1,21 @@
 import React, { Component } from 'react';
-import axios from 'axios';
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
+import { useMediaQuery } from 'react-responsive';
 
 import NavigationContainer from './navigation-container';
 import Home from './pages.js/home';
 import Follow from './pages.js/follow';
 import Blog from './pages.js/blog';
 import noMatch from './pages.js/no-match';
-import Mobile from './mobile';
+import { query } from 'express';
 
 export default class App extends Component {
     constructor() {
         super();
 
+        const isBigScreen = useMediaQuery({ query: '(min-device-width: 1224px)' })
 
-        var axios = require('axios');
-
-        var config = {
-            method: 'get',
-            url: 'localhost:3000/user',
-            headers: { 
-                'Authorization': 'Basic PEJhc2ljIEF1dGggVXNlcm5hbWU+OjxCYXNpYyBBdXRoIFBhc3N3b3JkPg=='
-            }
-        };
-
-        axios(config)
-        .then(function (response) {
-            console.log(JSON.stringify(response.data));
-        })
-        .catch(function (error) {
-            console.log(error);
-        });
+        const isSmallScreen = useMediaQuery({ query: '(max-width: 1224px)' })
 
     }
 
@@ -53,7 +38,10 @@ export default class App extends Component {
                     </div>
                 </Router>
 
-                <Mobile />
+                <div className="mobile-response">
+                    {isSmallScreen ? small=true  : query }
+                </div>
+
 
             </div>
         );
